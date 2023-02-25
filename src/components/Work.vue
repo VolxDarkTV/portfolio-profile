@@ -15,22 +15,22 @@
             return{
                 myCarousel:[
                     {
-                        img: 'discord.jpg',
+                        img: '/discord.jpg',
                     },
                     {
-                        img: 'dropbox.jpg',
+                        img: '/dropbox.jpg',
                     },
                     {
-                        img: 'netflix.png',
+                        img: '/netflix.png',
                     },
                     {
-                        img: 'spotify.jpg',
+                        img: '/spotify.jpg',
                     },
                     {
-                        img: 'zalando.jpg',
+                        img: '/zalando.jpg',
                     },
                     {
-                        img: 'whatsapp.jpg',
+                        img: '/whatsapp.jpg',
                     },
                 ],
                 preview: -1, 
