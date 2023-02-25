@@ -6,7 +6,7 @@
 
     <section id="contact" class="container py-5">
         <div class="flex-column flex-md-row row text-light gap-5 gap-md-0">
-            <div class="col-12 col-md-8 d-flex flex-column align-items-center align-items-lg-start gap-4">
+            <div class="col-12 col-lg-8 d-flex flex-column align-items-center align-items-lg-start gap-4">
                 
                 <h3 class="my_primary fw-bold">Contact</h3>
                 
@@ -45,7 +45,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-start gap-4">
+            <div class="col-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-start gap-4">
                 <h3 class="my_primary fw-bold">I'm here</h3>
 
                 <div class="d-flex justify-content-center">
