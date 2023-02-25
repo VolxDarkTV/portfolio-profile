@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="text-light d-flex align-items-center gap-3" href="../assets/files/cv.pdf" download>
+                        <a class="text-light d-flex align-items-center gap-3" href="./files/cv.pdf" download>
                             <font-awesome-icon class="fs-1" icon="fa-solid fa-file" />
                             <h4>
                                 Download CV
