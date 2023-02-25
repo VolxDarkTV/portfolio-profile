@@ -6,57 +6,57 @@
                 frontEnd:[
                     {
                         name: 'HTML5',
-                        img: '/html5.png',
+                        img: 'html5.png',
                     },
                     {
                         name: 'CSS',
-                        img: '/css.png',
+                        img: 'css.png',
                     },
                     {
                         name: 'Bootstrap',
-                        img: '/bootstrap.png',
+                        img: 'bootstrap.png',
                     },
                     {
                         name: 'Java Script',
-                        img: '/js.png',
+                        img: 'js.png',
                     },
                     {
                         name: 'Vue',
-                        img: '/Vue.png',
+                        img: 'Vue.png',
                     },
                     {
                         name: 'Axios',
-                        img: '/axios.png',
+                        img: 'axios.png',
                     },
                     {
                         name: 'Sass',
-                        img: '/sass.png',
+                        img: 'sass.png',
                     },
                     {
                         name: 'Node JS',
-                        img: '/nodejs.webp',
+                        img: 'nodejs.webp',
                     },
                 ],
                 backEnd:[
                     {
                         name: 'MySql',
-                        img: '/mysql.webp',
+                        img: 'mysql.webp',
                     },
                     {
                         name: 'MAMP',
-                        img: '/mamp.png',
+                        img: 'mamp.png',
                     },
                     {
                         name: 'PhpMyAdmin',
-                        img: '/phpmyadmin.png',
+                        img: 'phpmyadmin.png',
                     },
                     {
                         name: 'PHP',
-                        img: '/php.png',
+                        img: 'php.png',
                     },
                     {
                         name: 'Laravel',
-                        img: '/laravel.png',
+                        img: 'laravel.png',
                     },
                 ]
             }
@@ -80,7 +80,7 @@
                     <ul class="d-flex flex-column gap-4">
                         <li v-for="itemFront in frontEnd" class="d-flex align-items-center gap-3">
                             <div class="my_img">
-                                <img :src="'../../public/img/' + itemFront.img" alt="HTML5">
+                                <img :src="'./img/' + itemFront.img" alt="HTML5">
                             </div>
                             {{itemFront.name}}
                         </li>

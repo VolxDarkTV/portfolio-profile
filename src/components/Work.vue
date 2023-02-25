@@ -15,22 +15,22 @@
             return{
                 myCarousel:[
                     {
-                        img: '/discord.jpg',
+                        img: 'discord.jpg',
                     },
                     {
-                        img: '/dropbox.jpg',
+                        img: 'dropbox.jpg',
                     },
                     {
-                        img: '/netflix.png',
+                        img: 'netflix.png',
                     },
                     {
-                        img: '/spotify.jpg',
+                        img: 'spotify.jpg',
                     },
                     {
-                        img: '/zalando.jpg',
+                        img: 'zalando.jpg',
                     },
                     {
-                        img: '/whatsapp.jpg',
+                        img: 'whatsapp.jpg',
                     },
                 ],
                 preview: -1, 
@@ -61,13 +61,13 @@
             </div>
             <img
             class="preview-image"
-            :src="'../../public/carousel/' + myCarousel[preview].img"
+            :src="'./carousel/' + myCarousel[preview].img"
             :alt="myCarousel[preview].img"
             />
             <div>
                 <Carousel :items-to-show="6" :wrap-around="true">
                     <Slide v-for="(slide, index) in myCarousel" :key="slide">
-                        <img @click="setPreview(index)" :src="'../../public/carousel/' + slide.img" alt="">
+                        <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
                     </Slide>
                 
                     <template #addons>
@@ -78,7 +78,7 @@
         </div>
         <Carousel :items-to-show="1.5" :wrap-around="true" :autoplay="5000">
             <Slide v-for="(slide, index) in myCarousel" :key="slide">
-                <img @click="setPreview(index)" :src="'../../public/carousel/' + slide.img" alt="">
+                <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
             </Slide>
         
             <template #addons>
