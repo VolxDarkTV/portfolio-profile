@@ -26,7 +26,7 @@
                                 </a>
                             </div>
                             <!-- 2021 -->
-                            <div class="timeline" data-aos="fade-left" data-aos-delay="450">
+                            <div class="timeline" data-aos="fade-left" data-aos-delay="300">
                                 <a href="#" class="timeline-content">
                                     <div class="timeline-year">2021</div>
                                     <div class="timeline-icon">
@@ -39,7 +39,7 @@
                                 </a>
                             </div>
                             <!-- 2022 -->
-                            <div class="timeline" data-aos="fade-right" data-aos-delay="600">
+                            <div class="timeline" data-aos="fade-right" data-aos-delay="400">
                                 <a href="#" class="timeline-content">
                                     <div class="timeline-year">2022</div>
                                     <div class="timeline-icon">
@@ -53,7 +53,7 @@
                                 </a>
                             </div>
                             <!-- 2023 -->
-                            <div class="timeline" data-aos="fade-left" data-aos-delay="700">
+                            <div class="timeline" data-aos="fade-left" data-aos-delay="500">
                                 <a href="#" class="timeline-content">
                                     <div class="timeline-year">2023</div>
                                     <div class="timeline-icon">
