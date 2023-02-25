@@ -11,14 +11,6 @@
                 <h3 class="my_primary fw-bold">Contact</h3>
                 
                 <ul class="d-flex flex-column gap-3">
-                    <li class="d-flex align-items-center gap-3">
-                        <a class="text-light d-flex align-items-center gap-3" href="vincenzo.fotiboolean@gmail.com">
-                            <font-awesome-icon class="fs-1" icon="fa-solid fa-envelope"/>
-                            <h4>
-                                Mail
-                            </h4>
-                        </a>
-                    </li>
                     <li>
                         <a class="text-light d-flex align-items-center gap-3" href="https://www.linkedin.com/in/vincenzo-foti/">
                             <font-awesome-icon class="fs-1" icon="fa-brands fa-linkedin" />
@@ -32,6 +24,14 @@
                             <font-awesome-icon class="fs-1" icon="fa-brands fa-github" />
                             <h4>
                                 GitHub
+                            </h4>
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center gap-3">
+                        <a class="text-light d-flex align-items-center gap-3">
+                            <font-awesome-icon class="fs-1" icon="fa-solid fa-envelope"/>
+                            <h4>
+                                vincenzo.fotiboolean@gmail.com
                             </h4>
                         </a>
                     </li>
