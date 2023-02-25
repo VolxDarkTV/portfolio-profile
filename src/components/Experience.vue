@@ -67,7 +67,7 @@
                                         Come Netflix, Spotify, WhatsApp, Dropbox, Discord e Zalando. 
                                         <br>
                                         <br>
-                                        Grazie a questi progetti ho affinato la parte Front-End e il funzionamento delle API.Realizzazione partendo da zero, di complesse applicazioni Web ispirate ad alcuni dei più famosi successi. Come Netflix, Spotify, WhatsApp, Dropbox, Discord e Zalando. Grazie a questi progetti ho affinato la parte Front-End e il funzionamento delle API.
+                                        Grazie a questi progetti ho affinato la parte Front-End e il funzionamento delle API.
                                     </p>
                                 </a>
                             </div>
