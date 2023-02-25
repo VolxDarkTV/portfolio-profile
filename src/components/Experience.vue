@@ -13,7 +13,7 @@
                     <div class="col-md-12">
                         <div class="main-timeline">
                             <!-- 2020 -->
-                            <div class="timeline" data-aos="fade-right" data-aos-delay="200">
+                            <div class="timeline" data-aos="fade-right" data-aos-delay="100">
                                 <a href="#" class="timeline-content">
                                     <div class="timeline-year">2020</div>
                                     <div class="timeline-icon">
@@ -26,7 +26,7 @@
                                 </a>
                             </div>
                             <!-- 2021 -->
-                            <div class="timeline" data-aos="fade-left" data-aos-delay="300">
+                            <div class="timeline" data-aos="fade-left" data-aos-delay="200">
                                 <a href="#" class="timeline-content">
                                     <div class="timeline-year">2021</div>
                                     <div class="timeline-icon">
@@ -39,7 +39,7 @@
                                 </a>
                             </div>
                             <!-- 2022 -->
-                            <div class="timeline" data-aos="fade-right" data-aos-delay="400">
+                            <div class="timeline" data-aos="fade-right" data-aos-delay="300">
                                 <a href="#" class="timeline-content">
                                     <div class="timeline-year">2022</div>
                                     <div class="timeline-icon">
@@ -53,7 +53,7 @@
                                 </a>
                             </div>
                             <!-- 2023 -->
-                            <div class="timeline" data-aos="fade-left" data-aos-delay="500">
+                            <div class="timeline" data-aos="fade-left" data-aos-delay="400">
                                 <a href="#" class="timeline-content">
                                     <div class="timeline-year">2023</div>
                                     <div class="timeline-icon">
@@ -164,12 +164,12 @@
     left: auto;
     right: 139px;
 }
-.main-timeline .timeline:nth-child(4n+2) .timeline-content:before{ background-color: #FF3E7D; }
-.main-timeline .timeline:nth-child(4n+2) .timeline-year{ color: #FF3E7D; }
-.main-timeline .timeline:nth-child(4n+3) .timeline-content:before{ background-color: #7338BA; }
-.main-timeline .timeline:nth-child(4n+3) .timeline-year{ color: #7338BA; }
-.main-timeline .timeline:nth-child(4n+4) .timeline-content:before{ background-color: #FF9800; }
-.main-timeline .timeline:nth-child(4n+4) .timeline-year{ color: #FF9800; }
+.main-timeline .timeline:nth-child(4n+2) .timeline-content:before{ background-color: $brand_primary; }
+.main-timeline .timeline:nth-child(4n+2) .timeline-year{ color: $brand_primary; }
+.main-timeline .timeline:nth-child(4n+3) .timeline-content:before{ background-color: $brand_secondary; }
+.main-timeline .timeline:nth-child(4n+3) .timeline-year{ color: $brand_secondary; }
+.main-timeline .timeline:nth-child(4n+4) .timeline-content:before{ background-color: $brand_fourth; }
+.main-timeline .timeline:nth-child(4n+4) .timeline-year{ color: $brand_fourth; }
 @media screen and (max-width:767px){
     .main-timeline .timeline,
     .main-timeline .timeline:nth-child(even){
