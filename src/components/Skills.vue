@@ -98,7 +98,7 @@
                     <ul class="d-flex flex-column gap-4">
                         <li v-for="itemBack in backEnd" class="d-flex align-items-center gap-3">
                             <div class="my_img">
-                                <img :src="'../../public/img/' + itemBack.img" alt="HTML5">
+                                <img :src="'./img/' + itemBack.img" alt="HTML5">
                             </div>
                             {{ itemBack.name }}
                         </li>
