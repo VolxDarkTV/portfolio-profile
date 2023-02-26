@@ -55,37 +55,43 @@
 
     <section id="works" class="container py-5">
         <h1 class="my_primary fw-bold pt-5">Works</h1>
-        <div class="preview-container d-flex flex-column" v-if="preview >= 0">
-            <div class="my_close" @click="closePreview()">
-                <font-awesome-icon icon="fa-solid fa-xmark" />
+
+        <div class="mt-5">
+
+            <div class="preview-container d-flex flex-column" v-if="preview >= 0">
+                <div class="my_close" @click="closePreview()">
+                    <font-awesome-icon icon="fa-solid fa-xmark" />
+                </div>
+                <img
+                class="preview-image"
+                :src="'./carousel/' + myCarousel[preview].img"
+                :alt="myCarousel[preview].img"
+                />
+                <div>
+                    <Carousel :items-to-show="6" :wrap-around="true">
+                        <Slide v-for="(slide, index) in myCarousel" :key="slide">
+                            <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
+                        </Slide>
+                    
+                        <template #addons>
+                          <Navigation class="my_navigation_preview"/>
+                        </template>
+                    </Carousel>
+                </div>
             </div>
-            <img
-            class="preview-image"
-            :src="'./carousel/' + myCarousel[preview].img"
-            :alt="myCarousel[preview].img"
-            />
-            <div>
-                <Carousel :items-to-show="6" :wrap-around="true">
-                    <Slide v-for="(slide, index) in myCarousel" :key="slide">
-                        <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
-                    </Slide>
-                
-                    <template #addons>
-                      <Navigation class="my_navigation_preview"/>
-                    </template>
-                </Carousel>
-            </div>
+            <Carousel :items-to-show="1.5" :wrap-around="true" :autoplay="5000">
+                <Slide v-for="(slide, index) in myCarousel" :key="slide">
+                    <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
+                    
+                </Slide>
+            
+                <template #addons>
+                  <Navigation />
+                </template>
+            </Carousel>
+
         </div>
-        <Carousel :items-to-show="1.5" :wrap-around="true" :autoplay="5000">
-            <Slide v-for="(slide, index) in myCarousel" :key="slide">
-                <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
-                
-            </Slide>
-        
-            <template #addons>
-              <Navigation />
-            </template>
-        </Carousel>
+
     </section>
 
 </template>
@@ -105,7 +111,7 @@
 }
 
 .carousel__slide {
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 .carousel__prev{
