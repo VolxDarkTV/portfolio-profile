@@ -213,7 +213,7 @@
 .preview-container {
     z-index: 999;
     position: fixed;
-    top: 10%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
     background-color: #000;
