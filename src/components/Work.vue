@@ -111,6 +111,7 @@
 .carousel__prev{
     transform: rotateY(-10deg) scale(0.95);
 
+    z-index: 9;
     position: absolute;
     top: 40%;
     padding: 10px;
@@ -121,6 +122,7 @@
 .carousel__next {
     transform: rotateY(10deg) scale(0.95);
 
+    z-index: 9;
     position: absolute;
     top: 40%;
     padding: 10px;
