@@ -36,7 +36,7 @@
                         img: 'dropbox.jpg',
                     },
                     {
-                        img: 'netflix.png',
+                        img: 'netflix.jpg',
                     },
                     {
                         img: 'spotify.jpg',
