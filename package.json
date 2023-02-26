@@ -17,10 +17,9 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
+    "swiper": "^9.0.5",
     "typed.js": "^2.0.12",
-    "vue": "^3.2.45",
-    "vue3-animate-onscroll": "^1.0.6",
-    "vue3-carousel": "^0.2.11"
+    "vue": "^3.2.45"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
