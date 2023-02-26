@@ -113,7 +113,8 @@
 
     z-index: 9;
     position: absolute;
-    top: 40%;
+    top: 42%;
+    left: 5%;
     padding: 10px;
     border-radius: 50%;
     background-color: $brand_third;
@@ -124,7 +125,8 @@
 
     z-index: 9;
     position: absolute;
-    top: 40%;
+    top: 42%;
+    right: 5%;
     padding: 10px;
     border-radius: 50%;
     background-color: $brand_third;
