@@ -93,25 +93,24 @@
 <style lang="scss">
 @use '../styles/general.scss' as *;
 .carousel__item {
-  min-height: 200px;
-  width: 100%;
-  background-color: var(--vc-clr-primary);
-  color: var(--vc-clr-white);
-  font-size: 20px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    min-height: 200px;
+    width: 100%;
+    background-color: var(--vc-clr-primary);
+    color: var(--vc-clr-white);
+    font-size: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel__slide {
-  padding: 10px;
+    padding: 10px;
 }
 
 .carousel__prev{
     transform: rotateY(-10deg) scale(0.95);
 
-    z-index: 99;
     position: absolute;
     top: 42%;
     left: 5%;
@@ -123,7 +122,6 @@
 .carousel__next {
     transform: rotateY(10deg) scale(0.95);
 
-    z-index: 99;
     position: absolute;
     top: 42%;
     right: 5%;
@@ -135,19 +133,19 @@
 
 // preview
 .preview-container {
-  z-index: 999;
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #000;
-  border: 3px solid $brand_third;
-  border-radius: 4px;
+    z-index: 999;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    border: 3px solid $brand_third;
+    border-radius: 4px;
 }
 
 .preview-image {
-  max-width: 1200px;
-  max-height: 1200px;
+    max-width: 1200px;
+    max-height: 1200px;
 }
 
 .my_close{
