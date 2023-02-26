@@ -1,6 +1,6 @@
 <script>
     
-    import { Navigation, A11y, EffectCoverflow } from 'swiper';
+    import { Navigation, A11y, EffectCoverflow, Autoplay } from 'swiper';
     import { Swiper, SwiperSlide } from 'swiper/vue';
 
     import 'swiper/css';
@@ -23,7 +23,11 @@
             return {
                 onSwiper,
                 onSlideChange,
-                modules: [Navigation, A11y, EffectCoverflow],
+                modules: [Navigation, A11y, EffectCoverflow, Autoplay],
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
             };
         },
         data(){
@@ -136,6 +140,7 @@
                   modifier: 1,
                   slideShadows: true,
                 }"
+                :autoplay="true"
             >
                 <swiper-slide v-for="(slide, index) in myCarousel" :key="slide">
                     <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
