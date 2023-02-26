@@ -111,7 +111,7 @@
 .carousel__prev{
     transform: rotateY(-10deg) scale(0.95);
 
-    z-index: 9;
+    z-index: 99;
     position: absolute;
     top: 42%;
     left: 5%;
@@ -123,7 +123,7 @@
 .carousel__next {
     transform: rotateY(10deg) scale(0.95);
 
-    z-index: 9;
+    z-index: 99;
     position: absolute;
     top: 42%;
     right: 5%;
@@ -135,7 +135,7 @@
 
 // preview
 .preview-container {
-  z-index: 99;
+  z-index: 999;
   position: fixed;
   top: 20%;
   left: 50%;
