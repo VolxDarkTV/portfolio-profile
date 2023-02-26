@@ -160,15 +160,6 @@
     cursor: pointer;
 }
 
-// Navigation
-.my_navigation_preview{
-    position: absolute;
-    top: -150%;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: $brand_third;
-    color: $brand_fourth;
-}
 
 // .preview-container:hover .my_close{
 //     position: absolute;
