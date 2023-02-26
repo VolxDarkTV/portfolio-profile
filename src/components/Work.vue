@@ -71,7 +71,7 @@
                     </Slide>
                 
                     <template #addons>
-                      <Navigation/>
+                      <Navigation class="my_navigation_preview"/>
                     </template>
                 </Carousel>
             </div>
@@ -79,10 +79,11 @@
         <Carousel :items-to-show="1.5" :wrap-around="true" :autoplay="5000">
             <Slide v-for="(slide, index) in myCarousel" :key="slide">
                 <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
+                
             </Slide>
         
             <template #addons>
-              <Navigation/>
+              <Navigation />
             </template>
         </Carousel>
     </section>
@@ -108,12 +109,24 @@
 }
 
 .carousel__prev{
-    color: #fff;
     transform: rotateY(-10deg) scale(0.95);
+
+    position: absolute;
+    top: 40%;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: $brand_third;
+    color: $brand_fourth;
 }
 .carousel__next {
-  color: #fff;
-  transform: rotateY(10deg) scale(0.95);
+    transform: rotateY(10deg) scale(0.95);
+
+    position: absolute;
+    top: 40%;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: $brand_third;
+    color: $brand_fourth;
 }
 
 // preview
@@ -145,6 +158,16 @@
     background-color: $brand_primary;
     border-radius: 30%;
     cursor: pointer;
+}
+
+// Navigation
+.my_navigation_preview{
+    position: absolute;
+    top: -150%;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: $brand_third;
+    color: $brand_fourth;
 }
 
 // .preview-container:hover .my_close{
