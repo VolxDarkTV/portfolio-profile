@@ -1,6 +1,6 @@
 <script>
     
-    import { Navigation, A11y } from 'swiper';
+    import { Navigation, A11y, EffectCoverflow } from 'swiper';
     import { Swiper, SwiperSlide } from 'swiper/vue';
 
     import 'swiper/css';
@@ -23,7 +23,7 @@
             return {
                 onSwiper,
                 onSlideChange,
-                modules: [Navigation, A11y],
+                modules: [Navigation, A11y, EffectCoverflow],
             };
         },
         data(){
@@ -63,10 +63,6 @@
                 this.preview = -1;
             }
         },
-        mounted(){
-            
-            
-        }
     };
 </script>
 
@@ -111,6 +107,8 @@
             </Carousel> -->
 
             <swiper
+                :effect="'coverflow'"
+                :grabCursor="true"
                 :modules="modules"
                 :slides-per-view="1.5"
                 :space-between="20"
@@ -119,6 +117,13 @@
                 @swiper="onSwiper"
                 @slideChange="onSlideChange"
                 :centeredSlides="true"
+                :coverflowEffect="{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 30,
+                  modifier: 1,
+                  slideShadows: true,
+                }"
             >
                 <swiper-slide v-for="(slide, index) in myCarousel" :key="slide">
                     <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
