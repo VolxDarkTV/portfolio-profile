@@ -31,21 +31,27 @@
                 myCarousel:[
                     {
                         img: 'discord.jpg',
+                        url: 'https://github.com/VolxDarkTV/htmlcss-discord',
                     },
                     {
                         img: 'dropbox.jpg',
+                        url: 'https://github.com/VolxDarkTV/htmlcss-dropbox',
                     },
                     {
                         img: 'netflix.jpg',
+                        url: 'https://github.com/VolxDarkTV/vite-boolflix',
                     },
                     {
                         img: 'spotify.jpg',
+                        url: 'https://github.com/VolxDarkTV/html-css-spotifyweb',
                     },
                     {
                         img: 'zalando.jpg',
+                        url: 'https://github.com/VolxDarkTV/html-css-boolando',
                     },
                     {
                         img: 'whatsapp.jpg',
+                        url: 'https://github.com/VolxDarkTV/vue-boolzapp',
                     },
                 ],
                 preview: -1, 
@@ -74,8 +80,14 @@
         <div class="mt-5">
 
             <div class="preview-container d-flex flex-column" v-if="preview >= 0">
-                <div class="my_close" @click="closePreview()">
+                <div class="my_close d-flex justify-content-center align-items-center" @click="closePreview()">
                     <font-awesome-icon icon="fa-solid fa-xmark" />
+                </div>
+                <div>
+                    <a class="my_link d-flex justify-content-between align-items-center gap-2" :href="myCarousel[preview].url">
+                        <span>GitHub</span>
+                        <font-awesome-icon icon="fa-brands fa-github-alt" />
+                    </a>
                 </div>
                 <img
                 class="preview-image"
@@ -139,45 +151,6 @@
 
 <style lang="scss">
 @use '../styles/general.scss' as *;
-// .carousel__item {
-//     min-height: 200px;
-//     width: 100%;
-//     background-color: var(--vc-clr-primary);
-//     color: var(--vc-clr-white);
-//     font-size: 20px;
-//     border-radius: 8px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .carousel__slide {
-//     padding: 0px 10px;
-// }
-
-// .carousel__prev{
-//     transform: rotateY(-10deg) scale(0.95);
-
-//     position: absolute;
-//     top: 42%;
-//     left: 5%;
-//     padding: 10px;
-//     border-radius: 50%;
-//     background-color: $brand_third;
-//     color: $brand_fourth;
-// }
-// .carousel__next {
-//     transform: rotateY(10deg) scale(0.95);
-
-//     position: absolute;
-//     top: 42%;
-//     right: 5%;
-//     padding: 10px;
-//     border-radius: 50%;
-//     background-color: $brand_third;
-//     color: $brand_fourth;
-// }
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -231,13 +204,19 @@
     // max-height: 1200px;
 }
 
+.my_link{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    padding: 0px 10px;
+    background-color: $brand_fourth;
+    border-radius: 5%;
+    cursor: pointer;
+}
 .my_close{
     position: absolute;
     top: -10px;
     right: -10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 20px;
     height: 20px;
     background-color: $brand_primary;

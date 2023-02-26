@@ -15,7 +15,12 @@ ul{
 a{
   text-decoration: none;
   color: black;
+
+  &:hover{
+    color: #151414;
+  }
 }
+
 // :root {
 //     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 //     font-size: 16px;
