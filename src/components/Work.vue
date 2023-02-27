@@ -83,7 +83,9 @@
 
         <div class="mt-5">
 
+            <!-- Preview Container -->
             <div class="preview-container d-flex flex-column" v-if="preview >= 0">
+
                 <div class="my_close d-flex justify-content-center align-items-center" @click="closePreview()">
                     <font-awesome-icon icon="fa-solid fa-xmark" />
                 </div>
@@ -98,29 +100,24 @@
                 :src="'./carousel/' + myCarousel[preview].img"
                 :alt="myCarousel[preview].img"
                 />
-                <div>
-                    <!-- <Carousel :items-to-show="6" :wrap-around="true">
-                        <Slide v-for="(slide, index) in myCarousel" :key="slide">
-                            <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
-                        </Slide>
-                    
-                        <template #addons>
-                          <Navigation class="my_navigation_preview"/>
-                        </template>
-                    </Carousel> -->
-                </div>
-            </div>
+                <!-- Preview Carousel Thumbs -->
+                <div class="my_thumbs">
+                    <swiper
+                    :slides-per-view="10"
+                    :watchSlidesVisibility="true"
+                    :watchSlidesProgress="true"
+                    :centeredSlides="true"
+                    :slideToClickedSlide="true"
+                    :space-between="5"
+                    >
+                    <swiper-slide v-for="(slide, index) in myCarousel" :key="slide">
+                        <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
+                    </swiper-slide>
+                    </swiper>
 
-            <!-- <Carousel :items-to-show="1.5" :wrap-around="true" :autoplay="5000">
-                <Slide v-for="(slide, index) in myCarousel" :key="slide">
-                    <img @click="setPreview(index)" :src="'./carousel/' + slide.img" alt="">
-                    
-                </Slide>
-            
-                <template #addons>
-                  <Navigation />
-                </template>
-            </Carousel> -->
+                </div>
+
+            </div>
 
             <swiper
                 :effect="'coverflow'"
@@ -208,6 +205,14 @@
     width: 80vw;
     // max-height: 1200px;
 }
+
+.my_thumbs{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+
 
 .my_link{
     position: absolute;
