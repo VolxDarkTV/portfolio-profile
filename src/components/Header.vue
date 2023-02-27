@@ -74,7 +74,7 @@
 
                 <!-- Logo -->
                 <div class="my_logo">
-                    <a href="#">
+                    <a @click="active = -1" href="#">
                         <img class="rounded-circle" src="../../public/img/logo.jpg" alt="">
                     </a>
                 </div>
