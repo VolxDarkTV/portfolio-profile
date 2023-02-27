@@ -64,7 +64,7 @@
             <div class="mt-5 d-flex flex-column flex-lg-row justify-content-start align-items-center gap-5">
                 <!-- Add Profile Img & TypedJS -->
                 <div class="my_photo d-flex flex-column align-items-center gap-3">
-                    <img class="my_photo" src="./img/profile.jpg" alt="">
+                    <img class="my_photo" src="../../public/img/profile.jpg" alt="">
                     <div>
                         <span class="text-light fw-bold fs-5" ref="typed"></span>
                     </div>
