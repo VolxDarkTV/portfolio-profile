@@ -8,7 +8,7 @@
         <!-- Cube -->
         <div class="my_cube">
             <div class="my_top">
-                <img src="./img/logo.jpg" alt="">
+                <img src="../../public/img/logo.jpg" alt="">
             </div>
             <div>
                 <span class="d-flex justify-content-center align-items-center" style="--i:0;">
