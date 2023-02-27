@@ -1,7 +1,14 @@
 <script>
     import Typed from 'typed.js';
+    // Components
+    import Cube from '../components/Cube.vue';
 
     export default{
+
+        components:{
+            Cube,
+        },      
+
         data() {
             return{
                 list: ['Full-Stack', 'Front-End', 'Back-End'],
@@ -55,12 +62,15 @@
 
             <!-- About -->
             <div class="mt-5 d-flex flex-column flex-lg-row justify-content-start align-items-center gap-5">
+                <!-- Add Profile Img & TypedJS -->
                 <div class="my_photo d-flex flex-column align-items-center gap-3">
                     <img class="my_photo" src="../../public/img/profile.jpg" alt="">
                     <div>
                         <span class="text-light fw-bold fs-5" ref="typed"></span>
                     </div>
+                    
                 </div>
+                <!-- About Title -->
                 <div>
                     <h1 v-on:scroll="" class="my_primary fw-bold">About</h1>
                     <p class="text-light lh-lg">
@@ -69,6 +79,11 @@
                         Ma allo stesso tempo <span class="my_primary_bg rounded p-1 fw-bold">imparare</span> sempre più sul mondo della <span class="my_primary_bg rounded p-1 fw-bold">programmazione</span>.
                     </p>
     
+                </div>
+
+                <!-- Add Cube Component -->
+                <div>
+                    <Cube/>
                 </div>
             </div>
 

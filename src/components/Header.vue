@@ -106,6 +106,7 @@
 
 <style lang="scss">
 @use '../styles/general.scss' as *;
+
 .my_logo{
     width: 50px;
 }
