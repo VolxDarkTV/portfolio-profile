@@ -74,9 +74,9 @@
                 <div>
                     <h1 v-on:scroll="" class="my_primary fw-bold">About</h1>
                     <p class="lh-lg">
-                        Ho deciso di intraprendere questa strada per potermi permettere una <span class="my_secondary_bg rounded p-1 fw-bold">futura laurea in informatica</span>. 
+                        Ho deciso di intraprendere questa strada per potermi permettere una <span class="text-light my_secondary_bg rounded p-1 fw-bold">futura laurea in informatica</span>. 
                         <br>
-                        Ma allo stesso tempo <span class="my_primary_bg rounded p-1 fw-bold">imparare</span> sempre più sul mondo della <span class="my_primary_bg rounded p-1 fw-bold">programmazione</span>.
+                        Ma allo stesso tempo <span class="text-light my_primary_bg rounded p-1 fw-bold">imparare</span> sempre più sul mondo della <span class="text-light my_primary_bg rounded p-1 fw-bold">programmazione</span>.
                     </p>
     
                 </div>
