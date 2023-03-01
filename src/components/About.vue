@@ -53,10 +53,10 @@
             <!-- Developer Roll -->
             <div class="mb-5">
                 <h1 class="my_third mt-5 fw-bold animate__animated animate__bounce">Ciao.</h1>
-                <h1 class="text-light">Sono Vincenzo</h1>
+                <h1>Sono Vincenzo</h1>
                 <div class="d-flex justify-content-center fw-bold fs-1">
                     <span class="my_primary animate__animated animate__bounce">{{ text }}</span>
-                    <span class="text-light">&nbsp; Developer.</span>
+                    <span>&nbsp; Developer.</span>
                 </div>
             </div>
 
@@ -66,14 +66,14 @@
                 <div class="my_photo d-flex flex-column align-items-center gap-3">
                     <img class="my_photo" src="../../public/img/profile.jpg" alt="">
                     <div>
-                        <span class="text-light fw-bold fs-5" ref="typed"></span>
+                        <span class="fw-bold fs-5" ref="typed"></span>
                     </div>
                     
                 </div>
                 <!-- About Title -->
                 <div>
                     <h1 v-on:scroll="" class="my_primary fw-bold">About</h1>
-                    <p class="text-light lh-lg">
+                    <p class="lh-lg">
                         Ho deciso di intraprendere questa strada per potermi permettere una <span class="my_secondary_bg rounded p-1 fw-bold">futura laurea in informatica</span>. 
                         <br>
                         Ma allo stesso tempo <span class="my_primary_bg rounded p-1 fw-bold">imparare</span> sempre più sul mondo della <span class="my_primary_bg rounded p-1 fw-bold">programmazione</span>.

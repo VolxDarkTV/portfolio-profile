@@ -5,14 +5,14 @@
 <template>
 
     <section id="contact" class="container py-5">
-        <div class="flex-column flex-md-row row text-light gap-5 gap-md-0">
+        <div class="flex-column flex-md-row row gap-5 gap-md-0">
             <div class="col-12 col-lg-8 d-flex flex-column align-items-center align-items-lg-start gap-4">
                 
                 <h3 class="my_primary fw-bold">Contact</h3>
                 
                 <ul class="d-flex flex-column gap-3">
                     <li>
-                        <a class="text-light d-flex align-items-center gap-3" href="https://www.linkedin.com/in/vincenzo-foti/">
+                        <a class="d-flex align-items-center gap-3" href="https://www.linkedin.com/in/vincenzo-foti/">
                             <font-awesome-icon class="fs-1" icon="fa-brands fa-linkedin" />
                             <h4>
                                 Linkedin
@@ -20,7 +20,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="text-light d-flex align-items-center gap-3" href="https://github.com/VolxDarkTV?tab=repositories">
+                        <a class="d-flex align-items-center gap-3" href="https://github.com/VolxDarkTV?tab=repositories">
                             <font-awesome-icon class="fs-1" icon="fa-brands fa-github" />
                             <h4>
                                 GitHub
@@ -28,7 +28,7 @@
                         </a>
                     </li>
                     <li class="d-flex align-items-center gap-3">
-                        <a class="text-light d-flex align-items-center gap-3">
+                        <a class="d-flex align-items-center gap-3">
                             <font-awesome-icon class="fs-1" icon="fa-solid fa-envelope"/>
                             <h4>
                                 vincenzo.fotiboolean@gmail.com
@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="text-light d-flex align-items-center gap-3" href="./files/cv.pdf" download>
+                        <a class="d-flex align-items-center gap-3" href="./files/cv.pdf" download>
                             <font-awesome-icon class="fs-1" icon="fa-solid fa-file" />
                             <h4>
                                 Download CV

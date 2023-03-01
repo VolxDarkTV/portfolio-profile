@@ -72,7 +72,7 @@
         <div class="row row-cols-1 row-cols-md-2 gap-5 gap-md-0">
 
             <!-- Front-End -->
-            <div class="text-light d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-4">
 
                 <h3 class="fw-bold fs-3">Front-End</h3>
 
@@ -90,7 +90,7 @@
             </div>
 
             <!-- Back-End -->
-            <div class="text-light d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-4">
 
                 <h3 class="fw-bold fs-3">Back-End</h3>
 

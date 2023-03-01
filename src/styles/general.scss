@@ -14,11 +14,11 @@ ul{
 }
 a{
   text-decoration: none;
-  color: black;
+  // color: black;
 
-  &:hover{
-    color: #151414;
-  }
+  // &:hover{
+  //   color: #151414;
+  // }
 }
 
 // :root {
@@ -38,9 +38,9 @@ a{
 //     -webkit-text-size-adjust: 100%;
 //   }
   
-  body {
-    background-color: #151414;
-  }
+  // body {
+  //   background-color: #151414;
+  // }
   
   // h1 {
   //   font-size: 3.2em;
@@ -58,10 +58,11 @@ a{
   //   cursor: pointer;
   //   transition: border-color 0.25s;
   // }
-  
-  img{
-    width: 100%;
-  }
+
+
+img{
+  width: 100%;
+}
 
 
   // Color

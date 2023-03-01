@@ -9,10 +9,10 @@ import 'aos/dist/aos.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faMagnifyingGlass, faEnvelope, faFile, faStore, faCow, faLaptopCode, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { faCircleXmark } from '@fortawesome/free-regular-svg-icons'; 
+import { faCircleXmark, faSun, faMoon} from '@fortawesome/free-regular-svg-icons'; 
 import { faGithub, faLinkedin, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faMagnifyingGlass, faCircleXmark, faGithub, faLinkedin, faEnvelope, faFile, faStore, faCow, faLaptopCode, faXmark, faGithubAlt);
+library.add(faMagnifyingGlass, faCircleXmark, faGithub, faLinkedin, faEnvelope, faFile, faStore, faCow, faLaptopCode, faXmark, faGithubAlt, faSun, faMoon);
 
 const app = createApp(App);
 app.use(AOS);

@@ -1,6 +1,14 @@
 <script>
-
+    // Dark/Light Mode
+    import Toggle from '../components/Toggle.vue';
     export default{
+        // Dark/Light Mode
+        props: ['mode'],
+        
+        components:{
+            Toggle,
+        },
+
         data(){
             return{
                 showMenu: false,
@@ -52,33 +60,24 @@
 
 <template>
 
-    <!-- <div class="container-fluid fixed-top bg-dark">
-        <nav class="container d-flex justify-content-between align-items-center px-3 py-2">
-            <div class="my_logo">
-                <a href="#">
-                    <img class="rounded-circle" src="../assets/img/logo.jpg" alt="">
-                </a>
-            </div>
-            <ul class="text-light d-flex gap-3 fw-bold fs-2">
-                <li v-for="(link, index) in links" :key="index">
-                    <a @click="linkSelect(index)" class="my_header_class" :href="'#' + link.url" :class="active === index ? 'my_active' : ''">{{ link.name }}</a>
-                </li>
-            </ul>
-        </nav>
-    </div> -->
-    <div class="container-fluid fixed-top bg-dark">
+    <div class="my_header_bg container-fluid fixed-top">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
 
 
-
-                <!-- Logo -->
-                <div class="my_logo">
-                    <a @click="active = -1" href="#">
-                        <img class="rounded-circle" src="../../public/img/logo.jpg" alt="">
-                    </a>
+                <div class="d-flex gap-3 align-items-center">
+                    <!-- Logo -->
+                    <div class="my_logo">
+                        <a @click="active = -1" href="#">
+                            <img class="rounded-circle" src="../../public/img/logo.jpg" alt="">
+                        </a>
+                    </div>
+    
+                    <div>
+                        <!-- <h1>{{ mode }} mode</h1> -->
+                        <Toggle :mode="mode" @toggle="$emit('toggle')"/>
+                    </div>
                 </div>
-
 
                 <!-- Button ON/OFF -->
                 <button @click="showOfCanvasMenu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,13 +109,13 @@
 .my_logo{
     width: 50px;
 }
-.my_header_class{
-    color: #fff;
-}
+// .my_header_class{
+//     color: #fff;
+// }
 .my_header_class:hover{
-    color: $brand_primary;
+    color: $brand_primary !important;
 }
 .my_active{
-    color: $brand_primary;
+    color: $brand_primary !important;
 }
 </style>
