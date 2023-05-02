@@ -58,6 +58,18 @@
                         name: 'Laravel',
                         img: 'laravel.png',
                     },
+                    {
+                        name: 'C#',
+                        img: 'c-sharp.png',
+                    },
+                    {
+                        name: 'SQL Server',
+                        img: 'sql-server.png',
+                    },
+                    {
+                        name: '.Net',
+                        img: 'dot-net.png',
+                    }
                 ]
             }
         }
