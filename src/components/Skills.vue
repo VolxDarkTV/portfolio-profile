@@ -36,6 +36,10 @@
                         name: 'Node JS',
                         img: 'nodejs.webp',
                     },
+                    {
+                        name: 'React Native',
+                        img: 'react-native.png',
+                    },
                 ],
                 backEnd:[
                     {
